@@ -14,7 +14,7 @@ const workingHours = (req, res, next) => {
   const day = date.getDay(); // 0 = dimanche, 6 = samedi
   const hour = date.getHours();
 
-  if (day >= 0 && day <= 5 && hour >= 9 && hour < 17) {
+  if (day >= 1 && day <= 5 && hour >= 9 && hour < 17) {
     next();
   } else {
     res.render("closed");

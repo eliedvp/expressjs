@@ -1,9 +1,15 @@
 {
+  "name": "travelgo-ci",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine Express + EJS accessible uniquement pendant les heures d'ouverture",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test"
+  },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0"
-  },
-  "scripts": {
-    "start": "node app.js"
   }
 }
